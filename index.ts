@@ -1,7 +1,9 @@
 import { Asset } from '@ironfish/rust-nodejs'
 
-var a = new Asset("test", "test", "test");
-
-console.log(a);
+try {
+    var a = new Asset("test", "test", "test");
+} catch (e) {
+    console.log(e)    
+}
 
 console.log("hello")
